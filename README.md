@@ -15,18 +15,18 @@ followed by Hong Kong and Spain. However, it's usage paled in comparison to that
 English word, with the US's "#coronavirus" usage being more than 800 times Korea's 
 "#코로나바이러" usage.
 
-<img src=plots/country_#coronavirus_barchart.png width=50% />
+<img src="plots/country_#coronavirus_barchart.png" width=50% />
 
-<img src=plots/country_#코로나바이러스_barchart.png width=50% />
+<img src="plots/country_#코로나바이러스_barchart.png" width=50% />
 
 For language, in 2020 English (en) and Spanish (es) were the top two most frequent 
 languages to contain "#coronavirus". Undetermined (und) languages were third.
 In Korean, "#코로나바이러스" was most tweeted in Korean (ko), with English (en) 
 coming in second and Undetermined (und) languages again being third.
 
-<img src=plots/language_#coronavirus_barchart.png width=50% />
+<img src="plots/language_#coronavirus_barchart.png" width=50% />
 
-<img src=plots/language_#코로나바이러스_barchart.png width=50% />
+<img src="plots/language_#코로나바이러스_barchart.png" width=50% />
 
 ## Background
 
