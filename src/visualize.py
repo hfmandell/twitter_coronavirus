@@ -11,6 +11,8 @@ args = parser.parse_args()
 # imports
 import os
 import json
+import matplotlib.pyplot as plt
+import numpy as np
 from collections import Counter,defaultdict
 
 # open the input path
@@ -22,7 +24,30 @@ if args.percent:
     for k in counts[args.key]:
         counts[args.key][k] /= counts['_all'][k]
 
-# print the count values
+# top ten keys
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
-for k,v in items:
-    print(k,':',v)
+top_ten_items = items[0:10]
+
+keys = []
+values = []
+for key, value in top_ten_items:
+    keys.append(key)
+    values.append(value)
+
+keys.reverse()
+values.reverse()
+print(keys, values)
+
+if args.input_path == "reduced.lang":
+    plt.title(f'Usage of {args.key} in 2020 Tweets, by Language')
+    plt.xlabel('Language')
+    category = "language"
+
+else: #reduced.country
+    plt.title(f'Usage of {args.key} in 2020 Tweets, by Country')
+    plt.xlabel('Country')
+    category = "country"
+
+plt.ylabel('Tweet Count')
+plt.bar(keys, values)
+plt.savefig(f'plots/{category}_{args.key}_barchart.png')
