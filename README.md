@@ -83,4 +83,4 @@ This means that:
    we have a large number of files in the `outputs` folder.
    We use `reduce.py` to combine all of the `.lang` files into a single file,
    and all of the `.country` files into a different file.
-   Then, we use `visualize.py` to displauy the total number of occurrences of each of the hashtags on a bar chart`.
+   Then, we use `visualize.py` to display the total number of occurrences of each of the hashtags on a bar chart`.
